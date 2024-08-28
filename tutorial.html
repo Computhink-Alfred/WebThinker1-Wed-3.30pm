@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Byte Buster Coding Club</title>
+	<script src="/script/jquery.min.js"></script>
+	<script src="/script/bootstrap.js"></script>
+	<script src="/script/projects.js"></script>
+	<link href="/script/bootstrap.css" rel="stylesheet" />
+	<link href="/img/favicon-bbcc.png" rel="icon" />
+	<link href="/script/projects.css" rel="stylesheet" />
+	<link href="/script/tutorial.css" rel="stylesheet" />
+</head>
+<body class="bg-secondary bg-opacity-10" style="min-width:320px">
+	<header>
+		<nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/index.html">
+					<img src="/img/logo-bbcc.png" alt="logo" class="d-inline-block" style="max-height:3rem">
+					<span class="d-none d-sm-inline-block align-middle">Byte Buster<small class="d-block lh-xs fs-7">Coding Club</small></span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navlinks">
+					<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="/aboutus.html">Abouts Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="/memberspotlight.html">Members Spotlight</a></li>
+						<li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+						<li class="nav-item"><a class="nav-link" href="/projects.html">Past Projects</a></li>
+						<li class="nav-item"><a class="nav-link" href="/contacts.html">Contact Us</a></li>
+						<li class="nav-item"><a class="nav-link active" href="tutorial.html">Tutorial</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Here the main container where students should code -->
+	<article class="min-vh-100">
+		<!-- Banner Region -->
+		<div id="banner"></div>
+		<!-- Page Header -->
+		<div class="container pt-4 py-3">
+			<h1 class="text-center fw-bold display-4">How to Embed Videos Into a Website</h1>
+			<h2 class="text-center fw-normal">Coding Mastery by Byte Busters</h2>
+		</div>
+		<!-- Leading Text -->
+		<div class="py-3 bg-success bg-opacity-25">
+			<div class="container">
+				<p>Want to include videos or external content from another website into your own? Let's learn how to it do together!</p>
+			</div>
+		</div>
+		<!-- Key section -->
+		<div class="container py-3 pb-4">
+			<!-- Create a navigation tab with 2 navigation pills -->
+
+			<!-- First tab has been created for you -->
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="tab1">
+					<h3 class="h4"></h3>
+
+					<div class="px-3 py-4 bg-light bg-opacity-25">
+						<div class="container">
+							<div class="row align-items-center">
+								<div> <!-- Fill in the class name for column -->
+									<!-- Create a heading for the following text -->
+									What is Embedded Content
+									<!-- End of Heading -->
+									<!-- Create a Paragraph Tag with class name that emphasizes the paragraph -->
+									Embed is a term used to refer the action of incorporating external content into a webpage!
+									<!-- End of Paragraph Tag -->
+									<!-- Create a Paragraph Tag with class name that emphasizes the paragraph -->
+									External Content can possibly refer to any digital medial or information that originates from outside the webpage.
+									<!-- End of Paragraph Tag -->
+									<!-- Create a Paragraph Tag with class name that emphasizes the paragraph -->
+									The benefit of an embedded video is that it allows user to watch a video from the same page of the website without needing to open a new website.
+									<!-- End of Paragraph Tag -->
+								</div>
+								<div> <!-- Fill in the class name for column -->
+									<div class="d-flex">
+										<div class="card bg-transparent border-dark p-3 text-center m-3">
+											<p class="h5 py-2">Embedding Content Into Our Website</p>
+											<p class="h6 mt-n2 fw-bold">You might be thinking: “Why embed a video when I can just watch it from the original source?”</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--
+								Let's create the remaining instructions!
+								
+								1. Iframe - iframe is a HTML Tag that allow us to specify the link to our video!
+								Iframe Tag:
+									- iframe is a html element that is used to create an inline frame that allows the display another webpage or document within the current page
+									- The basic code for an iframe tag looks as follows: <br><code>&lt;iframe src="" title=""&gt;&lt;/iframe&gt;</code>
+									- <b>src</b> represents the source of the video.Hence to link the desired website or video, we will just have to enter the appropriate url within the quotation marks “ “.
+									- <b>title</b> is used to provide short description of the content that is currently displayed. User will be able to see the title when they hover over the content
+
+								2. Iframe Attributes - We will be talking about iframe attributes that allows for the sizing of the frame
+								Iframe Attributes:
+									- <b>Height & Width</b> will be the attribute we will be using to size our embedded content.<br> <code>&lt;iframe src="" height=“500” width=“500” title=""&gt;&lt;/iframe&gt;</code><br>
+									- <b>height</b> represents the vertical length of the frame displaying the video. Height is specific in terms of “pixel” hence the code will have the frame of the video to a height of 500 pixels. Default value without specifying would be 150 pixels.
+									- <b>width</b> represents the horizontal length of the frame displaying the video. Width is also specified in terms of “pixel” Default value would be 300 pixels instead.
+
+								3. Bootstrap classes - We will be talking about Bootstrap classes to suit smaller screens such as mobile devices.
+								Bootstrap classes:
+									- <b>Height & Width</b> will be the attribute we will be using to size our embedded content.<br> <code>&lt;iframe src="" class="mw-100 mh-100" height=“500” width=“500” title=""&gt;&lt;/iframe&gt;</code><br>
+									- <b>mh</b> represents the maximum height of the frame displaying the video. 100 represents 100% in size relative to its parent element (i.e., If the website was accessed on a smaller device, the frame for the content would take the size of the screen)
+									- <b>mw</b> represents the maximum width of the frame displaying the video. 100 represents 100% in size relative to its parent element
+							-->
+						</div>
+					</div>
+				</div>
+				<!-- Code 2nd Tab here -->
+				<!-- 
+					Embedded Video:
+					Link: https://www.youtube.com/embed/s4BibernJxU
+					Width: 500
+					Height: 500
+					Class: mw-100 mh-100
+					Title: How to use Iframe
+				 -->
+			</div>
+		</div>
+	</article>
+	<!-- End of coding region -->
+	<footer class="bg-dark text-light">
+		<div class="container py-2 pb-4">
+			<p>Done by Computhink Kids SG.</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#banner {
+	background-image: url('../img/banner-bbcc.png');
+	background-size: cover;
+	background-position: center center;
+	height: 40vh;
+}
+@media (min-width: 992px) {
+	#banner {
+		height:60vh;
+	}
+}
+
+.img-overlay {
+	display:none;
+	z-index: 2;
+}
+.img-overlay-container:hover .img-overlay {
+	display: initial;
+}
