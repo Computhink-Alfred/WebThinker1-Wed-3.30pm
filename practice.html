@@ -11,8 +11,28 @@
   </head>
   <body>
     <form>
-      <label for="userPassword">Password:</label>
-      <textarea type="text" id="userPassword" placeholder="E.g. 81781613" class="form-control" rows="5"></textarea>
+      <label for="userContactNumber">Contact Number:</label>
+      <input type="number" id="userContactNumber" placeholder="E.g. 81781613" class="form-control">
+      <div id="errorMessage" class="d-none">
+        <p class="text-danger">No blanks allowed.</p>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="validate()">Submit</button>
     </form>
+
+    <script>
+      const validate = () => {
+        if (document.getElementById("userContactNumber").value.length == 0) {
+          document.getElementById("errorMessage").classList = "";
+          document.getElementById("userContactNumber").classList = "form-control is-invalid";
+        } else {
+          document.getElementById("errorMessage").classList = "d-none";
+          document.getElementById("userContactNumber").classList = "form-control";
+        }
+
+
+        // let inputField = document.getElementById("userContactNumber").value;
+        // console.log(inputField);
+      }
+    </script>
   </body>
 </html>
