@@ -12,26 +12,23 @@
   <body>
     <form>
       <label for="userContactNumber">Contact Number:</label>
-      <input type="number" id="userContactNumber" placeholder="E.g. 81781613" class="form-control">
-      <div id="errorMessage" class="d-none">
-        <p class="text-danger">No blanks allowed.</p>
-      </div>
+      <input type="text" id="userContactNumber" placeholder="E.g. 81781613" class="form-control">
+      <p class="d-none text-danger" id="errorMessage">Error! Type in something</p>
       <button type="button" class="btn btn-primary" onclick="validate()">Submit</button>
     </form>
 
     <script>
       const validate = () => {
-        if (document.getElementById("userContactNumber").value.length == 0) {
-          document.getElementById("errorMessage").classList = "";
+        let input = document.getElementById("userContactNumber");
+        console.log(input.value.includes("@"));
+
+        if (input.value.includes("@") == false) {
           document.getElementById("userContactNumber").classList = "form-control is-invalid";
+          document.getElementById("errorMessage").classList = "text-danger";
         } else {
-          document.getElementById("errorMessage").classList = "d-none";
           document.getElementById("userContactNumber").classList = "form-control";
+          document.getElementById("errorMessage").classList = "d-none text-danger";
         }
-
-
-        // let inputField = document.getElementById("userContactNumber").value;
-        // console.log(inputField);
       }
     </script>
   </body>
