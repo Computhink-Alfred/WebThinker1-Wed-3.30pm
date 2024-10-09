@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Byte Buster Coding Club</title>
+	<script src="script/jquery.min.js"></script>
+	<script src="script/bootstrap.js"></script>
+	<link href="script/bootstrap.css" rel="stylesheet" />
+	<link href="script/contacts.css" rel="stylesheet" />
+	<link href="img/favicon-bbcc.png" rel="icon" />
+</head>
+<body class="bg-secondary bg-opacity-10" style="min-width:320px">
+	<header>
+		<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo-bbcc.png" alt="logo" class="d-inline-block" style="max-height:3rem">
+					<span class="d-none d-sm-inline-block align-middle">Byte Buster<small class="d-block lh-xs fs-7">Coding Club</small></span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navlinks">
+					<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="practice.html">Practice</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">Abouts Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Past Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacts.html">Contacts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="memberspotlight.html">memberspotlight</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tutorial.html">tutorial</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Here the main container where students should code -->
+	<article class="min-vh-100">
+		<!-- Banner Region -->
+		<div id="banner"></div>
+		<!-- Page Header -->
+		<div class="container pt-4 py-3">
+			<h1 class="text-center fw-bold display-4">Contact Us</h1>
+			<h2 class="text-center fw-normal">We'd Love to Hear from You</h2>
+		</div>
+		<!-- Leading Text -->
+		<div class="py-3 bg-success bg-opacity-25">
+			<div class="container">
+				<p>Hey there, fellow coder! Got a question? An idea? Just want to say 'Hi'? Drop us a line below. We'll get back to you quicker than a JavaScript loop!</p>
+			</div>
+		</div>
+
+		<form class="container py-3">
+			<div class="row gy-3">
+				<label for="name">name*</label>
+				<input type=”text” id="name" name=”name” placeholder="name" class="form-control">
+				<p class="d-none text-danger" id="error1">please enter a name</p>
+
+				<label for="email">email*</label>
+				<input type=”email” id="email" name=”email” placeholder="email" class="form-control">
+				<p class="d-none text-danger" id="error2">please enter a email</p>
+
+				<label for="subject">subject*</label>
+				<input type=”text” id="subject" name=”email” placeholder="Enquiry on how to code" class="form-control">
+				<p class="d-none text-danger" id="error3">please enter a name</p>
+
+				<label for="subject2">subject*</label>
+				<textarea type=”text” id="subject2" name=”email” class="form-control" rows=6></textarea>
+				<p class="d-none text-danger" id="error4">please enter a massage</p>
+
+				<!-- Label: Subject*
+						Textarea field with the row attribute of value 5-->
+
+			</div>
+            <button class="btn btn-primary ml-5" onclick="validate()">Send</button>
+		</form>
+		
+
+	</article>
+
+	
+	<!-- End of coding region -->
+	<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Computhink Kids SG.</div></footer>
+	<script>	
+		const validate = () => {
+			let input1 = document.getElementById("name").value.length;
+			if (input1 == 0 ){
+				document.getElementById("name").classList = "form-control is-invalid";
+				document.getElementById("error1").classList = "text-danger ";
+
+			}else{
+					document.getElementById("name").classList = "form-control";
+					document.getElementById("error1").classList = "text-danger d-none";
+			}
+			let input2 = document.getElementById("email").value.length;
+			if (input2 == 0 ){
+				document.getElementById("email").classList = "form-control is-invalid";
+				document.getElementById("error2").classList = "text-danger ";
+
+			}else{
+					document.getElementById("email").classList = "form-control";
+					document.getElementById("error2").classList = "text-danger d-none";
+			}
+			let input3 = document.getElementById("subject").value.length;
+			if (input3 == 0 ){
+				document.getElementById("subject").classList = "form-control is-invalid";
+				document.getElementById("error3").classList = "text-danger ";
+
+			}else{
+					document.getElementById("subject").classList = "form-control";
+					document.getElementById("error3").classList = "text-danger d-none";
+			}
+			
+		}	
+			
+	</script>
+</body>
+</html>
